@@ -1,83 +1,76 @@
 @extends('adminlte::page')
-@section('title', 'Transaksi')
+@section('title', 'Transaksi || Omah Kunci')
 
 @section('content_header')
     <h1 class="m-0 text-dark">Transaksi</h1>
 @stop
 @section('content')
-<script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-<script src="{{ asset('js/print.js') }}"></script>
-<script src="{{ asset('js/sweetalert2.all.min.js')}}"></script>
-<link rel="stylesheet" href="{{asset('css/sweetalert2.min.css')}}"> 
+        <div class="row">
+            <div class="col-6">
+                <input class="search-box" type="text" placeholder="Cari riwayat transaksi...">
+                <i class="fas fa-search ml-1 search-icon"></i>
+            </div>
+            <div class="col-6">
+                <i class="fa fa-calendar calendar-transaksi" aria-hidden="true"></i>
+            </div>
+        </div>
 
-<script>
-    $(document).ready(function(){
-      $(".hapus").click(function(e){
-        e.preventDefault();
-        const url = $(this).attr('href');
-        Swal.fire({
-          title: 'Apakah Anda Yakin?',
-          text: "Jika anda melakukannya sekarang, maka sesi transaksi yang sedang anda lakukan juga akan hilang",
-          icon: 'warning',
-          showCancelButton: true,
-          confirmButtonColor: '#3085d6',
-          cancelButtonColor: '#d33',
-          confirmButtonText: 'OK!',
-          cancelButtonText: 'Batal'
-        }).then((result) => {
-          if (result.isConfirmed) {
-            window.location.href = url;
-    
-
-            }
-          });
-
-      });
        
-    });
-</script>
-<div class="row">
-<div class="col-12">
-<div class="card">
-  <div class="card-header">
-    Transaksi Masuk
-  </div>
-  @php  $no = 1;@endphp
-  <div class="card-body">
-    <!-- <button class="btn btn-success mb-4"><i class="fa fa-file-excel mr-3"></i>Excel</button> -->
-    <table class="table table-bordered table-striped">
-    <thead>
-    <tr>
-        <th>No</th>
-        <th>Tanggal</th>
-        <th>Nama</th>
-        <th>Nota</th>
-        <th>Subtotal</th>
-        <th align="center">Aksi</th>
+    
+        <div class="row">
+            <h5 class="date">Hari Ini</h5>
+        </div>
+    
+       
+            <div class="card">
+                <table class="table">
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Pelanggan</th>
+                        <th>Total Tagihan</th>
+                        <th>DP</th>
+                        <th>Tagihan 2</th>
+                        <th>Tagihan 3</th>
+                        <th>Status</th>
+                        <th>Tanggal Transaksi</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Johanes Sinalsal Purba</td>
+                        <td>Rp.300.000</td>
+                        <td><i class="fa fa-check-circle"></i></td>
+                        <td>Rp.100.000</td>
+                        <td>Rp.100.000</td>
+                        <td>Belum Lunas</td>
+                        <td>27 Januari 2022</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card">
+                <table class="table">
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Pelanggan</th>
+                        <th>Total Tagihan</th>
+                        <th>DP</th>
+                        <th>Tagihan 2</th>
+                        <th>Tagihan 3</th>
+                        <th>Status</th>
+                        <th>Tanggal Transaksi</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Dionisius Setya Hermawan 1234</td>
+                        <td>Rp.300.000</td>
+                        <td><i class="fa fa-check-circle"></i></td>
+                        <td>Rp.100.000</td>
+                        <td>Rp.100.000</td>
+                        <td>Belum Lunas</td>
+                        <td>27 Januari 2022</td>
+                    </tr>
+                </table>
+            </div>
+    </div>
         
-    </tr>
-    </thead>
-    <tbody>
-    
-    @foreach($trans as $t)
-    <tr>
-        <td>{{$no}}</td>
-        <td>{{$t->created_at}}</td>
-        <td>{{$t->pelanggan}}</td>
-        <td>{{$t->no_nota}}</td>
-        <td>Rp. {{number_format($t->subtotal)}}</td>
-        <td align="center"><a href="{{url('kasir/hapustrans/'.$t->id)}}" style="color:white;" class="hapus"><i class="fa fa-trash"><button class="btn btn-danger"></i></button></a></td>
-       
-    </tr>
-    @php $no++ @endphp
-    @endforeach
-    </tbody>
-    </table>
-  </div>
-</div>
-
-</div>
-
-
-</div>
+        
 @endsection
