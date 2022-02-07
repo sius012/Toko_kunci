@@ -2,6 +2,11 @@
 *{
     font-family: 'Open Sans', sans-serif;
 }
+
+.content-wrapper{
+    background-color: #E4E4E4;
+}
+
 .bg{
     background-color: #0D5497;
     color: white;
@@ -40,11 +45,18 @@
     border: 1px solid #C6C6C6;
     padding: 5px;
     width: 450px;
+
+    border-radius: 5px;
+}
+.row .col-6 .search-box::placeholder{
+    color: #8C8C8C;
+    font-size: 15px;
 }
 .row .col-6 .search-icon{
     background-color: #1562AA;
 
     padding: 10px;
+    border-radius: 5px;
 }
 .row .col-6 .times{
     background-color: #1562AA;
@@ -53,6 +65,7 @@
     width: 320px;
     padding: 7px;
     margin-left: 150px;
+    border-radius: 5px;
 
     text-align: center;
 }
@@ -61,13 +74,19 @@
     font-style: italic;
     color: #747474;
 }
-.row .table tr th{
+.row .table-kasir tr th{
     background-color: #1A79D0;
     color: white;
+
+    text-align: left;
+}
+.row .table-kasir tr td{
+    text-align: left;
 }
 
 .row .col-4 .row .nama-pelanggan{
     border: 1px solid #C6C6C6;
+    border-radius: 5px;
 
     padding: 5px;
     width: 320px;
@@ -83,9 +102,12 @@
     text-align: center;
     margin-bottom: 0;
     margin-left: -7px;
+
+    border-radius: 5px 0 0 5px;
 }
 .row .col-4 .row .col-2 .subtotal-input{
     border: 1px solid #C6C6C6;
+    border-radius: 0 5px 5px 0;
 
     padding: 7px;
     margin-left: 37px;
@@ -102,6 +124,8 @@
     text-align: center;
     margin-bottom: 0;
     margin-left: -7px;
+
+    border-radius: 5px 0 0 5px;
 }
 .row .col-4 .row .col-2 .total-input{
     border: 1px solid #C6C6C6;
@@ -110,6 +134,8 @@
     margin-left: 37px;
     margin-top: 2px;
     width: 216px;
+
+    border-radius: 0 5px 5px 0;
 }
 
 .payment-method #tunai{
@@ -117,6 +143,7 @@
     color: white;
 
     padding: 3px;
+    padding-bottom: 10px;
     width: 350px;
 }
 .payment-method .row .col-2 .method-1{
@@ -131,6 +158,7 @@
     color: white;
 
     padding: 3px;
+    padding-bottom: 10px;
     width: 350px;
 }
 
@@ -138,6 +166,7 @@
     background-color: #48BE00;
     color: white;
     border: none;
+    border-radius: 10px;
 
     padding: 10.5px;
     width: 290px;
@@ -147,6 +176,7 @@
     background-color: #247CCD;
     color: white;
     border: none;
+    border-radius: 10px;
 
     padding: 10.5px;
     width: 290px;
@@ -156,6 +186,7 @@
     background-color: #EE3F3F;
     color: white;
     border: none;
+    border-radius: 10px;
 
     padding: 10.5px;
     width: 290px;
@@ -166,3 +197,24 @@
 }
 
 /* CSS UNTUK HALAMAN TRANSAKSI */
+.row .col-6 .calendar-transaksi{
+    background-color: #1562AA;
+    color: white;
+    padding: 10.5px;
+
+    border-radius: 5px;
+}
+
+.row .date{
+    margin-left: 20px;
+    margin-top: 35px;
+
+    font-weight: bold;
+}
+
+.history-transaksi{
+    background-color: white;
+}
+.card .table tr td{
+    font-size: 13px;
+}
