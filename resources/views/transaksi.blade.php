@@ -15,62 +15,60 @@
             </div>
         </div>
 
-       
-    
         <div class="row">
             <h5 class="date">Hari Ini</h5>
         </div>
     
        
             <div class="card">
-                <table class="table">
+                <table class="table table-borderless">
                     <tr>
-                        <th>No</th>
-                        <th>Nama Pelanggan</th>
-                        <th>Total Tagihan</th>
-                        <th>DP</th>
-                        <th>Tagihan 2</th>
-                        <th>Tagihan 3</th>
-                        <th>Status</th>
-                        <th>Tanggal Transaksi</th>
+                        <th><div style="width: 40px; margin-left:9px;">No</div></th>
+                        <th><div style="width: 150px">Nama Pelanggan</div></th>
+                        <th><div style="width: 130px">Total Tagihan</div></th>
+                        <th><div style="width: 110px">DP</div></th>
+                        <th><div style="width: 110px">Tagihan 2</div></th>
+                        <th><div style="width: 110px">Tagihan 3</div></th>
+                        <th><div style="width: 90px">Status</div></th>
+                        <th><div style="width: 120px">Tanggal Transaksi</div></th>
                     </tr>
                     <tr>
-                        <td>001</td>
-                        <td>Johanes Sinalsal Purba</td>
-                        <td>Rp.300.000</td>
-                        <td><i class="fa fa-check-circle"></i></td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Belum Lunas</td>
-                        <td>27 Januari 2022</td>
+                        <td><div style="width: 60px">001</div></td>
+                        <td><div>Johanes Sinalsal Purba</div></td>
+                        <td><div>Rp.300.000</div></td>
+                        <td><div><i class="fa fa-check-circle"></i></div></td>
+                        <td><div>Rp.100.000</div></td>
+                        <td><div>Rp.100.000</div></td>
+                        <td><div class="bg-danger rounded-pill">Belum Lunas</div></td>
+                        <td><div>27 Januari 2022, 10:30 WIB</div></td>
                     </tr>
                 </table>
             </div>
             <div class="card">
-                <table class="table">
+                <table class="table table-borderless">
                     <tr>
-                        <th>No</th>
-                        <th>Nama Pelanggan</th>
-                        <th>Total Tagihan</th>
-                        <th>DP</th>
-                        <th>Tagihan 2</th>
-                        <th>Tagihan 3</th>
-                        <th>Status</th>
-                        <th>Tanggal Transaksi</th>
+                        <th><div style="width: 40px; margin-left:9px;">No</div></th>
+                        <th><div style="width: 150px">Nama Pelanggan</div></th>
+                        <th><div style="width: 130px">Total Tagihan</div></th>
+                        <th><div style="width: 110px">DP</div></th>
+                        <th><div style="width: 110px">Tagihan 2</div></th>
+                        <th><div style="width: 110px">Tagihan 3</div></th>
+                        <th><div style="width: 90px">Status</div></th>
+                        <th><div style="width: 120px">Tanggal Transaksi</div></th>
                     </tr>
                     <tr>
-                        <td>001</td>
-                        <td>Dionisius Setya Hermawan 1234</td>
-                        <td>Rp.300.000</td>
-                        <td><i class="fa fa-check-circle"></i></td>
-                        <td>Rp.100.000</td>
-                        <td>Rp.100.000</td>
-                        <td>Belum Lunas</td>
-                        <td>27 Januari 2022</td>
+                        <td><div style="width: 60px">001</div></td>
+                        <td><div>Johanes Sinalsal Purba</div></td>
+                        <td><div>Rp.300.000</div></td>
+                        <td><div><i class="fa fa-check-circle"></i></div></td>
+                        <td><div><i class="fa fa-check-circle"></i></div></td>
+                        <td><div><i class="fa fa-check-circle"></i></div></td>
+                        <td><div style="background-color: #48BE00; border-radius:100px; color:white;">Lunas</div></td>
+                        <td><div>27 Januari 2022, 10:30 WIB</div></td>
                     </tr>
                 </table>
             </div>
-    </div>
+</div>
         
         
 @endsection
