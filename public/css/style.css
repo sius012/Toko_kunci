@@ -215,6 +215,27 @@
 .history-transaksi{
     background-color: white;
 }
+.card{
+    box-shadow: none;
+}
+.card table{
+    margin: 10px;
+    text-align: center;
+
+    border: none;
+}
 .card .table tr td{
     font-size: 13px;
+    font-weight: bold;
+
+    padding-bottom: 0;
+}
+.card .table tr th{
+    font-size: 13px;
+    font-weight: lighter;
+}
+.card .table tr td div i{
+    color: #48BE00;
+
+    font-size: large;
 }
